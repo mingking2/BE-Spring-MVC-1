@@ -17,7 +17,7 @@
 ## 1. 웹 애플리케이션 이해
 ### 웹 서버, 웹 애플리케이션 서버
 - 웹 - HTTP 기반<BR>
-![img.png](image/웹 http 기반.png)
+![img.png](image/웹%20http%20기반.png)
   <br><br>
 - 모든 것이 HTTP
   - HTTP 메세지에 모든 것을 전송
@@ -33,7 +33,7 @@
   - 정적 리소스 제공, 기타 부가기능
   - 정적(파일) HTML, CSS, JS, 이미지, 영상
   - 예) NGINX, APACHE<br>
-    ![img_1.png](image/웹 서버.png)
+    ![img_1.png](image/웹%20서버.png)
 <br><br>
 - **웹 애플리케이션 서버(WAS - Web Application Server)**
   - HTTP 기반으로 동작
@@ -42,7 +42,7 @@
     - 동적 HTML, HTTP API(JSON)
     - 서블릿, JSP, 스프링 MVC
   - 예) 톰캣(Tomcat) Jetty, Undertow<br>
-  ![img_2.png](image/웹 애플리케이션 서버.png)
+  ![img_2.png](image/웹%20애플리케이션%20서버.png)
 <br><br>
 - 웹 서버, 웹 애플리케이션 서버 **차이**
   - 웹 서버는 정적 리소스(파일), WAS는 애플리케이션 로직
@@ -56,28 +56,28 @@
 - **웹 시스템 구성 - WAS, DB**
   - WAS, DB 만으로 시스템 구성 가능
   - WAS는 정적 리소스, 애플리케이션 로직 모두 제공 가능<br>
-  ![img.png](image/웹 시스템 구성1.png)
+  ![img.png](image/웹%20시스템%20구성1.png)
     <br><br>
   - WAS가 너무 많은 역할을 담당, 서버 과부화 우려
   - 가장 비싼 애플리케이션 로직이 정적 리소스 때문에 수행이 어려울 수 있음
   - WAS 장애 시 오류 화면도 노출 불가능<br>
-  ![img_1.png](image/웹 시스템 구성2.png)
+  ![img_1.png](image/웹%20시스템%20구성2.png)
 <br><br>
 - 웹 시스템 구성 - WEB, WAS, DB
   - 정적 리소스는 웹 서버가 처리
   - 웹 서버는 애플리케이션 로직같은 동적인 처리가 필요하면 WAS에 요청을 위임
   - WAS는 중요한 애플리케이션 로직 처리 전담<BR>
-  ![img_2.png](image/웹 시스템 구성3.png)
+  ![img_2.png](image/웹%20시스템%20구성3.png)
     <br><br>
   - 효율적인 리소스 관리
     - 정적 리소스가 많이 사용되면 Web 서버 증설
     - 애플리케이션 리소스가 많이 사용되면 WAS 증설<BR>
-    ![img_3.png](image/웹 시스템 구성4.png)
+    ![img_3.png](image/웹%20시스템%20구성4.png)
 <br><br>
     - 정적 리소스만 제공하는 웹 서버는 잘 죽지 않음
     - 애플리케이션 로직이 동작하는 WAS 서버는 잘 죽음
     - WAS, DB 장애시 WEB 서버가 오류 화면 제공 가능<BR>
-    ![img_4.png](image/웹 시스템 구성5.png)
+    ![img_4.png](image/웹%20시스템%20구성5.png)
 <br><br>
 <br><br>
 ### 서블릿
@@ -87,7 +87,7 @@
     - HTTP 요청 정보를 편리하게 사용할 수 있는 HttpServletRequest
     - HTTP 응답 정보를 편리하게 제공할 수 있는 HttpServletResponse
     - 개발자는 HTTP 스펙을 매우 편리하게 사용<br>
-    ![img.png](image/서블릿 구조.png)
+    ![img.png](image/서블릿%20구조.png)
 <br><br>
     - HTTP 요청, 응답 흐름
       - HTTP 요청 시
@@ -172,22 +172,22 @@
 - **정적 리소스**
   - 고정된 HTML 파일, CSS, JS, 이미지, 영상 등을 제공
   - 주로 웹 브라우저<BR>
-  ![img.png](image/정적 리소스.png)
+  ![img.png](image/정적%20리소스.png)
 <br><br>
 - **HTML 페이지**
   - 동적으로 필요한 HTML 파일을 생성해서 전달
   - 웹 브라우저: HTML 해석<BR>
-  ![img_1.png](image/html 페이지.png)
+  ![img_1.png](image/html%20페이지.png)
 <br><br>
 - **HTTP API**
   - HTML이 아니라 데이터를 전달
   - 주로 JSON 형식 사용
   - 다양한 시스템에서 호출<BR>
-  ![img_2.png](image/http api1.png)
+  ![img_2.png](image/http%20api1.png)
 <br><br>
   - 데이터만 주고 받음, UI 화면이 필요하면, 클라이언트가 별도 처리
   - 앱, 웹 클라이언트, 서버 to 서버<br>
-  ![img_3.png](image/http api2.png)
+  ![img_3.png](image/http%20api2.png)
 <br><br>
   - **다양한 시스템 연동**
     - 주로 JSON 형태로 데이터 통신
@@ -321,13 +321,13 @@
   <br><br>
   - 서블릿 컨테이너 동작 방식 설명
     - 내장 톰캣 서버 생성<BR>
-    ![img.png](image/내장 톰캣 서버 생성.png)
+    ![img.png](image/내장%20톰캣%20서버%20생성.png)
       <BR><BR>
     - HTTP 요청, HTTP 응답 메세지<BR>
     ![img_1.png](/image/HTTP%20요청,%20HTTP%20응답%20메세지.png)
       <BR><BR>
     - 웹 애플리케이션 서버의 요청 응답 구조<BR>
-    ![img_2.png](image/웹 애플리케이션 서버의 요청 응답 구조.png)
+    ![img_2.png](image/웹%20애플리케이션%20서버의%20요청%20응답%20구조.png)
       <BR><BR>
     > 참고: HTTP 응답에서 Content-Length는 웹 애플리케이션 서버가 자동으로 생성해준다.
   
