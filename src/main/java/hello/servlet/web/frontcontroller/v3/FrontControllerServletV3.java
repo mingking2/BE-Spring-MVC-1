@@ -56,7 +56,7 @@ public class FrontControllerServletV3 extends HttpServlet {
         return new Myview("/WEB-INF/views/" + viewName + ".jsp");
     }
 
-    private static Map<String, String> createParamMap(HttpServletRequest request) {
+    public static Map<String, String> createParamMap(HttpServletRequest request) {
         Map<String, String> paramMap = new HashMap<>();
         request.getParameterNames().asIterator()
                 .forEachRemaining(paramName -> paramMap.put(paramName, request.getParameter(paramName)));
